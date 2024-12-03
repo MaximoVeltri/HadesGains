@@ -1,0 +1,152 @@
+.product-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.product-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-info h2 {
+  font-size: 2.5rem;
+  color: #1a5f7a;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.product-details {
+  margin: 1.5rem 0;
+}
+
+.product-details p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.benefits {
+  margin: 4rem 0;
+}
+
+.benefits h2 {
+  text-align: center;
+  color: #1a5f7a;
+  margin-bottom: 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.benefit-card h3 {
+  color: #1a5f7a;
+  margin-bottom: 1rem;
+}
+
+.purchase-section {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.purchase-section h2 {
+  color: #1a5f7a;
+  margin-bottom: 2rem;
+}
+
+.purchase-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.purchase-card {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.purchase-card.featured {
+  background-color: #1a5f7a;
+  color: white;
+  transform: scale(1.05);
+}
+
+.purchase-card.featured .price {
+  color: white;
+}
+
+.savings {
+  color: #ffd700;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.buy-button {
+  background-color: #1a5f7a;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.featured .buy-button {
+  background-color: #ffd700;
+  color: #1a5f7a;
+}
+
+.buy-button:hover {
+  background-color: #134b61;
+}
+
+.featured .buy-button:hover {
+  background-color: #ffed4a;
+}
+
+@media (max-width: 768px) {
+  .product-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .product-image {
+    text-align: center;
+  }
+
+  .product-image img {
+    max-width: 100%;
+  }
+}
