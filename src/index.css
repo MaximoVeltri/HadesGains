@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+}
+
+.card-hover {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+.button-primary {
+  @apply bg-primary text-white px-6 py-3 rounded-full font-semibold 
+         transition-all duration-300 hover:bg-primary-dark 
+         transform hover:-translate-y-1 hover:shadow-lg;
+}
+
+.button-secondary {
+  @apply bg-white text-primary px-6 py-3 rounded-full font-semibold 
+         border-2 border-primary transition-all duration-300 
+         hover:bg-primary hover:text-white transform hover:-translate-y-1;
+}
