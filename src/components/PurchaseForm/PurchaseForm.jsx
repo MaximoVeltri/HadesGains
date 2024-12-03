@@ -184,4 +184,4 @@ function PurchaseForm() {
 }
 
 // Exportamos el componente PurchaseForm
-export default PurchaseForm;
+  export default PurchaseForm;

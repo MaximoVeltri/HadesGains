@@ -56,21 +56,6 @@ function Product() {
           {/* Sección Hero con información principal del producto */}
           <motion.div variants={fadeIn} className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div className="space-y-6">
-              {/* Etiquetas y calificación */}
-              <div className="flex items-center space-x-2">
-                <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">
-                  Nuevo Sabor
-                </span>
-                {/* Sistema de calificación con estrellas */}
-                <div className="flex items-center text-yellow-400">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <span className="ml-2 text-gray-600 text-sm">(128 reseñas)</span>
-                </div>
-              </div>
               
               {/* Título del producto */}
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
